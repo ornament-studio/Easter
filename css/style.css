@@ -852,7 +852,8 @@ p {
 
 .modal__content {
 	position: relative;
-	max-width: 800px;
+	width: 100%;
+	max-width: 811px;
 	padding: 50px;
 	background: #fff;
 	transform: translateY(-120px);
@@ -869,5 +870,113 @@ p {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	color: #1c344a;
+	transition: opacity 0.2s ease;
+	opacity: 0.5;
 	cursor: pointer;
+}
+
+.modal__close:hover {
+	opacity: 1;
+}
+
+.modal__close svg {
+	width: 14px;
+	height: 14px;
+}
+
+.icon-plan:before {
+	content: "";
+	display: inline-block;
+	vertical-align: text-top;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	background-image: url("../img/plan.png");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.icon-bowl:before {
+	content: "";
+	display: inline-block;
+	vertical-align: text-top;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	background-image: url("../img/bowl.png");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.prepare {
+	display: flex;
+	flex-direction: column;
+}
+
+.prepare__start {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.prepare__name h2 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #004c94;
+}
+
+.prepare__detail {
+	margin-top: 20px;
+}
+
+.prepare__detail p {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.prepare__detail ul {
+	list-style: none;
+	padding: 0;
+	margin: 12px 0 0;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.prepare__detail li:before {
+	content: "";
+	display: inline-block;
+	vertical-align: text-top;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	background-image: url("../img/li.png");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.prepare__end {
+	margin-top: 20px;
+}
+
+.prepare__end p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.prepare__end p:first-child {
+	font-weight: 700;
+}
+
+.prepare__end p:last-child {
+	margin-top: 12px;
 }
