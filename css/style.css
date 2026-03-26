@@ -137,7 +137,7 @@ p {
 	height: 1224px;
 	max-width: 100%;
 	transform: translateX(-50%);
-	background-image: url("/img/main-bg.png");
+	background-image: url("../img/main-bg.png");
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -170,7 +170,7 @@ p {
 	vertical-align: text-top;
 	width: 44px;
 	height: 44px;
-	background-image: url("/img/heart.png");
+	background-image: url("../img/heart.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -196,7 +196,7 @@ p {
 	display: block;
 	width: 363px;
 	height: 107px;
-	background-image: url("/img/desc-bg.png");
+	background-image: url("../img/desc-bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: translate(-50%, -50%);
@@ -231,7 +231,7 @@ p {
 	display: block;
 	width: 89px;
 	height: 32px;
-	background-image: url("/img/underline-left.png");
+	background-image: url("../img/underline-left.png");
 	background-size: auto;
 	background-repeat: no-repeat;
 	transform: rotate(5deg);
@@ -245,7 +245,7 @@ p {
 	display: block;
 	width: 63px;
 	height: 16px;
-	background-image: url("/img/arrow-left.png");
+	background-image: url("../img/arrow-left.png");
 	background-size: auto;
 	background-repeat: no-repeat;
 	transform: rotate(5deg);
@@ -267,7 +267,7 @@ p {
 	display: block;
 	width: 96px;
 	height: 11px;
-	background-image: url("/img/underline-right.png");
+	background-image: url("../img/underline-right.png");
 	background-size: auto;
 	background-repeat: no-repeat;
 	transform: rotate(-5deg);
@@ -281,7 +281,7 @@ p {
 	display: block;
 	width: 63px;
 	height: 16px;
-	background-image: url("/img/arrow-right.png");
+	background-image: url("../img/arrow-right.png");
 	background-size: auto;
 	background-repeat: no-repeat;
 	transform: rotate(-5deg);
@@ -379,7 +379,7 @@ p {
 	width: 40px;
 	height: 44px;
 	transform: translate(-16px, 44px);
-	background-image: url("/img/pointer.svg");
+	background-image: url("../img/pointer.svg");
 	background-size: auto;
 	background-repeat: no-repeat;
 }
@@ -406,7 +406,7 @@ p {
 	width: 145px;
 	height: 48px;
 	transform: rotate(-4deg);
-	background-image: url("/img/underline.png");
+	background-image: url("../img/underline.png");
 	background-size: auto;
 	background-repeat: no-repeat;
 }
@@ -466,7 +466,7 @@ p {
 	height: 1224px;
 	max-width: 100%;
 	transform: translateX(-50%);
-	background-image: url("/img/main-bg.png");
+	background-image: url("../img/main-bg.png");
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -497,7 +497,7 @@ p {
 	vertical-align: text-top;
 	width: 44px;
 	height: 44px;
-	background-image: url("/img/heart.png");
+	background-image: url("../img/heart.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -516,7 +516,7 @@ p {
 	width: 50px;
 	height: 46px;
 	transform: translateX(150px);
-	background-image: url("/img/arrow-donat.png");
+	background-image: url("../img/arrow-donat.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -619,7 +619,7 @@ p {
 	height: 649px;
 	max-width: 100%;
 	transform: translateX(-50%);
-	background-image: url("/img/footer-bg.png");
+	background-image: url("../img/footer-bg.png");
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -715,7 +715,7 @@ p {
 	width: 172px;
 	height: 90px;
 	transform: translateX(-340px);
-	background-image: url("/img/tree-top-left.png");
+	background-image: url("../img/tree-top-left.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -731,7 +731,7 @@ p {
 	width: 173px;
 	height: 90px;
 	transform: translateX(340px);
-	background-image: url("/img/tree-top-right.png");
+	background-image: url("../img/tree-top-right.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -747,7 +747,7 @@ p {
 	width: 196px;
 	height: 258px;
 	transform: translateX(-984px);
-	background-image: url("/img/tree-left.png");
+	background-image: url("../img/tree-left.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -763,7 +763,7 @@ p {
 	width: 196px;
 	height: 258px;
 	transform: translateX(984px);
-	background-image: url("/img/tree-right.png");
+	background-image: url("../img/tree-right.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -784,7 +784,7 @@ p {
 	width: 137px;
 	height: 281px;
 	transform: translateX(-860px);
-	background-image: url("/img/tree-bottom-left.png");
+	background-image: url("../img/tree-bottom-left.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -800,7 +800,7 @@ p {
 	width: 117px;
 	height: 199px;
 	transform: translateX(860px);
-	background-image: url("/img/tree-bottom-right.png");
+	background-image: url("../img/tree-bottom-right.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -816,7 +816,7 @@ p {
 	width: 273px;
 	height: 190px;
 	transform: translateX(-130px);
-	background-image: url("/img/tree-bottom.png");
+	background-image: url("../img/tree-bottom.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
