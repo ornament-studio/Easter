@@ -232,7 +232,7 @@ p {
 	width: 89px;
 	height: 32px;
 	background-image: url("../img/underline-left.png");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(5deg);
 }
@@ -246,7 +246,7 @@ p {
 	width: 63px;
 	height: 16px;
 	background-image: url("../img/arrow-left.png");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(5deg);
 }
@@ -268,7 +268,7 @@ p {
 	width: 96px;
 	height: 11px;
 	background-image: url("../img/underline-right.png");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(-5deg);
 }
@@ -282,7 +282,7 @@ p {
 	width: 63px;
 	height: 16px;
 	background-image: url("../img/arrow-right.png");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(-5deg);
 }
@@ -318,6 +318,10 @@ p {
 	display: flex;
 }
 
+.pasochka__action_mob {
+	display: none;
+}
+
 .pasochka__btn {
 	display: flex;
 	align-items: center;
@@ -343,6 +347,10 @@ p {
 	top: 168px;
 	left: 50%;
 	transform: translateX(546px) rotate(4deg);
+}
+
+.pasochka__info_mob {
+	display: none;
 }
 
 .pasochka__dop {
@@ -630,7 +638,8 @@ p {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1310px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -699,7 +708,7 @@ p {
 	font-weight: 400;
 	color: #fff;
 	opacity: 0.5;
-	transition: opacity 0.4 ease;
+	transition: opacity 0.4s ease;
 }
 
 .footer__policy a:hover {
@@ -720,6 +729,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__top:after {
@@ -736,6 +746,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__center:before {
@@ -752,6 +763,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__center:after {
@@ -768,6 +780,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__center_fix:before,
@@ -789,6 +802,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__bot:after {
@@ -805,6 +819,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .tree__fot {
@@ -821,20 +836,24 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .modal {
 	position: fixed;
 	inset: 0;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.5);
 	transition:
 		opacity 0.4s ease,
 		visibility 0.4s ease;
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
+	overflow-y: auto;
 	z-index: 1000;
 }
 
@@ -844,17 +863,12 @@ p {
 	pointer-events: auto;
 }
 
-.modal__overlay {
-	position: absolute;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.5);
-}
-
 .modal__content {
 	position: relative;
 	width: 100%;
 	max-width: 811px;
 	padding: 50px;
+	margin: auto;
 	background: #fff;
 	transform: translateY(-120px);
 	transition: transform 0.4s ease;
@@ -1063,4 +1077,362 @@ p {
 	font-weight: 400;
 	text-align: center;
 	color: #1c344a;
+}
+
+@media (max-width: 1200px) {
+	.tree__fot {
+		transform: translateX(-236px);
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		padding-top: 30px;
+	}
+
+	.header__inner {
+		gap: 39px;
+	}
+
+	.header__logo_prostonashe {
+		width: 132px;
+		height: 42px;
+	}
+
+	.header__logo_zhittelub {
+		width: 130px;
+		height: 71px;
+	}
+
+	.tree__top:before {
+		top: -16px;
+		right: 50%;
+		width: 100px;
+		height: 53px;
+		transform: translateX(-26px);
+	}
+
+	.tree__top:after {
+		top: -16px;
+		left: 50%;
+		width: 100px;
+		height: 52px;
+		transform: translateX(22px);
+	}
+
+	.hero {
+		padding-top: 23px;
+		padding-bottom: 39px;
+	}
+
+	.hero__inner {
+		min-height: calc(100vh - 163px);
+	}
+
+	.hero__title {
+		max-width: 350px;
+	}
+
+	.hero__title h1 {
+		font-size: 24px;
+	}
+
+	.hero__title h1:after {
+		width: 26px;
+		height: 26px;
+	}
+
+	.hero__content {
+		margin-top: 20px;
+	}
+
+	.hero__desc {
+		max-width: 229px;
+		padding: 16px 0;
+	}
+
+	.hero__desc::before {
+		width: 243px;
+		height: 71px;
+	}
+
+	.hero__desc h2 {
+		font-size: 16px;
+	}
+
+	.hero__text_left {
+		transform: translate(-48px, 92px) rotate(-5deg);
+	}
+
+	.hero__text_left:after {
+		top: -20px;
+		left: 267px;
+		width: 40px;
+		height: 11px;
+		transform: rotate(-120deg);
+	}
+
+	.hero__text_right {
+		transform: translate(36px, 92px) rotate(5deg);
+	}
+
+	.hero__text_right:after {
+		top: -16px;
+		left: -170px;
+		width: 40px;
+		height: 10px;
+		transform: rotate(125deg);
+	}
+
+	.hero__items {
+		margin-top: 165px;
+	}
+
+	.pasochka__action {
+		display: none;
+		justify-content: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.pasochka__action_mob {
+		display: flex;
+	}
+
+	.hero__items {
+		gap: 0 40px;
+		max-width: 300px;
+		flex-wrap: wrap;
+	}
+
+	.pasochka {
+		max-width: 130px;
+	}
+
+	.pasochka:first-child {
+		flex: 0 0 100%;
+		max-width: unset;
+	}
+
+	.pasochka__img {
+		max-width: 130px;
+	}
+
+	.pasochka__info {
+		display: none;
+		top: 22px;
+		transform: translateX(96px) rotate(7deg);
+	}
+
+	.pasochka__info_mob {
+		display: block;
+	}
+
+	.pasochka__dop {
+		max-width: 90px;
+	}
+
+	.pasochka__dop p {
+		font-size: 16px;
+	}
+
+	.pasochka__dop:before {
+		width: 120px;
+		height: 120px;
+		background-color: #fff;
+	}
+
+	.pasochka__dopText:before {
+		top: 32px;
+		left: 4px;
+		width: 80px;
+		height: 29px;
+		transform: rotate(6deg);
+		background-image: url("../img/underline-left.png");
+	}
+
+	.pasochka__dop:after {
+		display: none;
+	}
+
+	.pasochka__btn {
+		max-width: 280px;
+	}
+
+	.pasochka__btn span {
+		max-width: 200px;
+	}
+
+	.hero__sub {
+		margin-top: 37px;
+		max-width: 303px;
+	}
+
+	.hero__sub p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.hero__more {
+		margin-top: 10px;
+	}
+
+	.tree__center:before {
+		width: 76px;
+		height: 100px;
+		transform: translateX(-226px);
+	}
+
+	.tree__center:after {
+		width: 76px;
+		height: 100px;
+		transform: translateX(226px);
+	}
+
+	.tree__bot:before {
+		width: 46px;
+		height: 96px;
+		transform: translateX(-178px);
+	}
+
+	.tree__bot:after {
+		width: 55px;
+		height: 96px;
+		transform: translateX(178px);
+	}
+
+	.recept {
+		padding-top: 23px;
+	}
+
+	.recept__title {
+		max-width: 350px;
+	}
+
+	.recept__title h2 {
+		font-size: 24px;
+	}
+
+	.recept__title h2:after {
+		width: 26px;
+		height: 26px;
+	}
+
+	.recept__action {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.recept__btn {
+		max-width: 280px;
+	}
+
+	.recept__btn span {
+		max-width: 200px;
+	}
+
+	.recept__action:before {
+		top: -24px;
+		left: 50%;
+		width: 36px;
+		height: 33px;
+		transform: translateX(140px) rotate(-20deg);
+	}
+
+	.recept__items {
+		flex-wrap: wrap;
+		max-width: 240px;
+		gap: 50px;
+		margin-top: 64px;
+	}
+
+	.receptPasochka {
+		gap: 0;
+	}
+
+	.receptPasochka__img {
+		max-width: 200px;
+	}
+
+	.receptPasochka__action {
+		margin-top: 20px;
+	}
+
+	.footer__partner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
+
+	.footer__partner + .footer__partner {
+		margin-top: 45px;
+	}
+
+	.footer__name h3 {
+		font-size: 30px;
+	}
+
+	.footer hr {
+		margin-top: 40px;
+	}
+
+	.footer__info {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 40px 0;
+		gap: 20px;
+	}
+
+	.modal__content {
+		max-width: 350px;
+		padding: 40px 20px;
+	}
+
+	.prepare__start {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.prepare__img {
+		max-width: 260px;
+	}
+
+	.prepare__name h2 {
+		font-size: 26px;
+	}
+
+	.modal__content_thanks {
+		padding: 35px 40px;
+	}
+
+	.thanks:before {
+		top: 64px;
+		left: -14px;
+		display: block;
+		width: 34px;
+		height: 29px;
+	}
+
+	.thanks__title:before {
+		top: 67px;
+		right: 0px;
+		width: 22px;
+		height: 18px;
+	}
+
+	.thanks__title h2 {
+		font-size: 24px;
+	}
+
+	.thanks__desc:before {
+		top: 54px;
+		right: 14px;
+		width: 16px;
+		height: 13px;
+	}
+
+	.thanks__desc p {
+		font-size: 18px;
+	}
 }
