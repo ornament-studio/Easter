@@ -1,3 +1,4 @@
+//Modals
 const openButtons = document.querySelectorAll("[data-modal-open]");
 const closeButtons = document.querySelectorAll("[data-modal-close]");
 const modals = document.querySelectorAll(".modal");
@@ -54,3 +55,15 @@ function unlockBody() {
 	document.body.style.overflow = "";
 	document.body.style.paddingRight = "";
 }
+
+//Smooth scroll
+const scrollBtn = document.querySelector(".hero__btn");
+
+scrollBtn.addEventListener("click", () => {
+	const target = document.getElementById("screen2");
+
+	target.scrollIntoView({
+		behavior: "smooth",
+		block: "start",
+	});
+});
