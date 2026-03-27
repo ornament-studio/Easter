@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	min-width: 320px;
+	min-width: 350px;
 	font-family: "Balsamiq Sans", Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -788,6 +788,13 @@ p {
 	top: 520px;
 }
 
+.tree__center_mob:before,
+.tree__center_mob:after,
+.tree__center_mob2:before,
+.tree__center_mob2:after {
+	display: none;
+}
+
 .tree__bot:before {
 	content: "";
 	position: absolute;
@@ -1125,6 +1132,12 @@ p {
 		padding-bottom: 39px;
 	}
 
+	.hero:before {
+		top: calc(50% - 314px);
+		max-width: unset;
+		transform: translateX(-634px);
+	}
+
 	.hero__inner {
 		min-height: calc(100vh - 163px);
 	}
@@ -1283,10 +1296,18 @@ p {
 		transform: translateX(-226px);
 	}
 
+	.tree__center_fix:before {
+		transform: translateX(-200px);
+	}
+
 	.tree__center:after {
 		width: 76px;
 		height: 100px;
 		transform: translateX(226px);
+	}
+
+	.tree__center_fix:after {
+		transform: translateX(200px);
 	}
 
 	.tree__bot:before {
@@ -1303,6 +1324,24 @@ p {
 
 	.recept {
 		padding-top: 23px;
+	}
+
+	.recept:before {
+		top: 44px;
+		max-width: unset;
+		transform: translateX(-634px);
+	}
+
+	.recept:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -300px;
+		display: block;
+		width: 100%;
+		height: 600px;
+		background-color: #bce3f0;
+		z-index: -1;
 	}
 
 	.recept__title {
@@ -1357,6 +1396,21 @@ p {
 
 	.receptPasochka__action {
 		margin-top: 20px;
+	}
+
+	.footer {
+		padding-top: 163px;
+		z-index: 1;
+	}
+
+	.footer:before {
+		top: 0;
+		left: 0;
+		width: 1780px;
+		height: 600px;
+		max-width: unset;
+		transform: translateX(0);
+		background-size: cover;
 	}
 
 	.footer__partner {
@@ -1434,5 +1488,67 @@ p {
 
 	.thanks__desc p {
 		font-size: 18px;
+	}
+
+	.tree__fot {
+		left: 0;
+		bottom: 322px;
+		width: 96px;
+		height: 138px;
+		transform: translateX(312px);
+		background-image: url("../img/tree-bottom_mob.png");
+	}
+
+	.tree__bot:after {
+		z-index: 1;
+	}
+
+	.tree__center_fix:before {
+		top: 540px;
+	}
+
+	.tree__center_fix:after {
+		top: 560px;
+	}
+
+	.tree__center_mob:before,
+	.tree__center_mob:after,
+	.tree__center_mob2:before,
+	.tree__center_mob2:after {
+		display: block;
+	}
+
+	.tree__center_mob:before {
+		top: 980px;
+	}
+
+	.tree__center_mob:after {
+		top: 1000px;
+	}
+
+	.tree__center_mob2:before {
+		top: 1440px;
+	}
+
+	.tree__center_mob2:after {
+		top: 1460px;
+	}
+}
+
+@media (max-width: 390px) {
+	.hero:before {
+		top: calc(50% - 168px);
+		transform: translateX(-50%);
+		background-image: url("../img/main-bg_mob.png");
+	}
+
+	.recept:before {
+		top: 83px;
+		transform: translateX(-50%);
+		background-image: url("../img/main-bg_mob.png");
+	}
+
+	.recept:after {
+		height: 1400px;
 	}
 }
