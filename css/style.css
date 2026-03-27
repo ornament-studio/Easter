@@ -1186,12 +1186,12 @@ p {
 	}
 
 	.hero__text_right {
-		transform: translate(36px, 92px) rotate(5deg);
+		transform: translate(26px, 92px) rotate(5deg);
 	}
 
 	.hero__text_right:after {
 		top: -16px;
-		left: -170px;
+		left: -160px;
 		width: 40px;
 		height: 10px;
 		transform: rotate(125deg);
@@ -1234,7 +1234,7 @@ p {
 	.pasochka__info {
 		display: none;
 		top: 22px;
-		transform: translateX(96px) rotate(7deg);
+		transform: translateX(86px) rotate(7deg);
 	}
 
 	.pasochka__info_mob {
