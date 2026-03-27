@@ -560,6 +560,10 @@ p {
 	background: linear-gradient(0deg, #38b85c 0%, #1b7735 100%);
 }
 
+.recept__link {
+	display: none;
+}
+
 .recept__items {
 	display: flex;
 	justify-content: center;
@@ -903,6 +907,11 @@ p {
 	padding: 60px;
 }
 
+.modal__content_mono {
+	max-width: 704px;
+	padding: 50px;
+}
+
 .modal.is-open .modal__content {
 	transform: translateY(0);
 }
@@ -1103,6 +1112,53 @@ p {
 
 .pasochka__info_hd {
 	display: none;
+}
+
+.mono {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.mono__img {
+	flex-shrink: 0;
+	width: 230px;
+	height: 230px;
+}
+
+.mono__text p {
+	font-size: 24px;
+	font-weight: 700;
+	color: #1c344a;
+}
+
+.mono__action {
+	margin-top: 20px;
+}
+
+.mono__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 240px;
+	min-height: 60px;
+	padding: 14px 30px;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	box-shadow:
+		0 7px 12px 0 rgba(7, 83, 7, 0.3),
+		inset 0 5px 10px 0 #67ce6e;
+	background: linear-gradient(180deg, #38b85c 0%, #1b7735 100%);
+	border: none;
+	border-radius: 35px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.mono__btn:hover {
+	background: linear-gradient(0deg, #38b85c 0%, #1b7735 100%);
 }
 
 @media (max-width: 1500px) {
@@ -1410,6 +1466,14 @@ p {
 	}
 
 	.recept__btn {
+		display: none;
+	}
+
+	.recept__link {
+		display: flex;
+	}
+
+	.recept__btn {
 		max-width: 280px;
 	}
 
@@ -1578,6 +1642,19 @@ p {
 
 	.tree__center_mob2:after {
 		top: 1460px;
+	}
+
+	.mono {
+		flex-direction: column;
+	}
+
+	.mono__text p {
+		font-size: 22px;
+	}
+
+	.mono__action {
+		display: flex;
+		justify-content: center;
 	}
 }
 

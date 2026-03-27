@@ -147,16 +147,16 @@
 								</div>
 
 								<div class="pasochka__action">
-									<a
-										href="https://send.monobank.ua/jar/5b6fupWGUR"
+									<button
+										type="button"
 										class="pasochka__btn"
-										target="_blank"
+										data-modal-open="mono"
 									>
 										<span
 											>Задонатити та поділитися
 											паскою</span
 										>
-									</a>
+									</button>
 								</div>
 							</div>
 
@@ -172,16 +172,16 @@
 								</div>
 
 								<div class="pasochka__action">
-									<a
-										href="https://send.monobank.ua/jar/5b6fupWGUR"
+									<button
+										type="button"
 										class="pasochka__btn"
-										target="_blank"
+										data-modal-open="mono"
 									>
 										<span
 											>Задонатити та поділитися
 											паскою</span
 										>
-									</a>
+									</button>
 								</div>
 							</div>
 
@@ -197,16 +197,16 @@
 								</div>
 
 								<div class="pasochka__action">
-									<a
-										href="https://send.monobank.ua/jar/5b6fupWGUR"
+									<button
+										type="button"
 										class="pasochka__btn"
-										target="_blank"
+										data-modal-open="mono"
 									>
 										<span
 											>Задонатити та поділитися
 											паскою</span
 										>
-									</a>
+									</button>
 								</div>
 							</div>
 
@@ -249,9 +249,13 @@
 						</div>
 
 						<div class="pasochka__action pasochka__action_mob">
-							<button type="button" class="pasochka__btn">
+							<a
+								href="https://send.monobank.ua/jar/5b6fupWGUR"
+								class="pasochka__btn"
+								target="_blank"
+							>
 								<span>Задонатити та поділитися паскою</span>
-							</button>
+							</a>
 						</div>
 
 						<div class="hero__sub">
@@ -328,9 +332,17 @@
 						</div>
 
 						<div class="recept__action">
+							<button
+								type="button"
+								class="recept__btn"
+								data-modal-open="mono"
+							>
+								<span>Задонатити та поділитися паскою</span>
+							</button>
+
 							<a
 								href="https://send.monobank.ua/jar/5b6fupWGUR"
-								class="recept__btn"
+								class="recept__btn recept__link"
 								target="_blank"
 							>
 								<span>Задонатити та поділитися паскою</span>
@@ -765,6 +777,42 @@
 								і аж тоді ставте випікатися на 35–40 хв за 180°.
 								Смакота готова — пригощайте рідних!
 							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="mono">
+				<div class="modal__content modal__content_mono">
+					<button class="modal__close" data-modal-close>
+						<svg class="icon">
+							<use href="./img/sprite.svg#close"></use>
+						</svg>
+					</button>
+
+					<div class="mono">
+						<div class="mono__img">
+							<img src="./img/qr.jpg" alt="qrcode" />
+						</div>
+
+						<div class="mono__info">
+							<div class="mono__text">
+								<p>
+									ПРОСТОНАШE та Життєлюб збирають кошти на
+									великодні набори та термотари для проєкту
+									"Обід без бід"
+								</p>
+							</div>
+
+							<div class="mono__action">
+								<a
+									href="https://send.monobank.ua/jar/5b6fupWGUR"
+									class="mono__btn"
+									target="_blank"
+								>
+									<span>Посилання на банку</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
