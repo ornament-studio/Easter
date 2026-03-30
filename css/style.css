@@ -1234,9 +1234,22 @@ p {
 	}
 
 	.hero:before {
-		top: calc(50% - 314px);
-		max-width: unset;
-		transform: translateX(-634px);
+		top: calc(50% - 256px);
+		width: 900px;
+        height: 653px;
+		background-image: url("../img/main-bg_mob.png");
+	}
+
+	.hero:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 300px;
+		background-color: #bce3f0;
+		z-index: -1;
 	}
 
 	.hero__inner {
@@ -1429,9 +1442,8 @@ p {
 	}
 
 	.recept:before {
-		top: 44px;
-		max-width: unset;
-		transform: translateX(-634px);
+		top: 20px;
+		background-image: url("../img/main-bg_mob.png");
 	}
 
 	.recept:after {
@@ -1441,7 +1453,7 @@ p {
 		bottom: -300px;
 		display: block;
 		width: 100%;
-		height: 600px;
+		height: 1200px;
 		background-color: #bce3f0;
 		z-index: -1;
 	}
@@ -1655,35 +1667,5 @@ p {
 	.mono__action {
 		display: flex;
 		justify-content: center;
-	}
-}
-
-@media (max-width: 390px) {
-	.hero:before {
-		top: calc(50% - 168px);
-		transform: translateX(-50%);
-		background-image: url("../img/main-bg_mob.png");
-	}
-
-	.hero:after {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		display: block;
-		width: 100%;
-		height: 300px;
-		background-color: #bce3f0;
-		z-index: -1;
-	}
-
-	.recept:before {
-		top: 83px;
-		transform: translateX(-50%);
-		background-image: url("../img/main-bg_mob.png");
-	}
-
-	.recept:after {
-		height: 1400px;
 	}
 }
